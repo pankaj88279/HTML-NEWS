@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+            <meta charset="UTF-8">
+            <meta http-equiv="X-UA-Compatible" content="IE=edge">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title>HTML-NEWS</title>
+       
+        </head>
+        <body>
+           <form>
+            <input type="text" name="News">
+            <input type="submit" onclick="pankaj(event)">
+            <input type="button" value="Submit">
+           </form> 
+           <p id="myNews"></p>
+           <script>
+          let myobj={
+
+            };
+
+          let m=document.querySelector("input[name='News']")
+          let n=document.getElementById("myNews")
+      
+        function pankaj(e){
+
+            e.preventDefault();
+             console.log(m.value);
+
+            n.innerHTML+= m.value;
+        }
+           </script>
+        </body>
+        </html>

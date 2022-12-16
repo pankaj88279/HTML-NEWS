@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>JS Function - Create a news word by word using HTML forms</title>
+    </head>
+    <body>
+        form>
+        <input type="text" name="news">
+        <input type="submit" onclick="anil(event)"> 
+        <input type="button" value="Submit">  
+   </form>
+   <p id="mynews"></p>
+
+
+   <script>
+
+       let myObject = {
+           //1. Property:Value
+
+           //2. Method/Function
+       }; //JS OBject object
+
+
+       // Global Variable
+
+
+            // object.method() 
+       let n = document.querySelector('input[name="news"]');
+       let myn = document.getElementById("mynews");
+       
+
+       function anil(e){ // e is a formal argument
+          
+           let x = 10; // x is a local variable
+           //object.method();
+           e.preventDefault();
+           //Function body
+           //alert("Clicked");
+           // Can we access the global variable inside the function body ?
+           console.log(n.value);
+
+           //myn.innerHTML = myn.innerHTML + n.value;
+           myn.innerHTML += n.value;
+      }
+
+      //console.log(x);
+
+      
+   </script>
+</body>
+</html>
